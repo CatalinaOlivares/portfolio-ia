@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section id="about" className="min-h-screen py-20 px-6">
       <div className="max-w-6xl mx-auto">
-        {/* Título */}
+        {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -16,10 +16,10 @@ export default function About() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-bold gradient-text mb-4">
-            Sobre Mí
+            About Me
           </h2>
           <p className="text-xl text-gray-400">
-            Conoce mi trayectoria y pasión por la IA
+            Learn about my journey and passion for AI
           </p>
         </motion.div>
 
@@ -34,17 +34,17 @@ export default function About() {
           >
             <div className="bg-gray-900 border border-gray-800 rounded-xl p-8">
               <h3 className="text-2xl font-bold text-primary mb-4">
-                Mi Historia
+                My Story
               </h3>
               <p className="text-gray-300 text-lg leading-relaxed">
                 {personalData.bio}
               </p>
             </div>
 
-            {/* Educación */}
+            {/* Education */}
             <div className="bg-gray-900 border border-gray-800 rounded-xl p-8">
               <h3 className="text-2xl font-bold text-primary mb-4">
-                Educación
+                Education
               </h3>
               <div className="space-y-2">
                 <h4 className="text-xl font-semibold text-white">
@@ -63,7 +63,7 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* Experiencia */}
+          {/* Experience */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -72,7 +72,7 @@ export default function About() {
             className="space-y-6"
           >
             <h3 className="text-2xl font-bold text-primary mb-6">
-              Experiencia Profesional
+              Professional Experience
             </h3>
             {personalData.experience.map((exp, index) => (
               <motion.div
@@ -83,7 +83,7 @@ export default function About() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="bg-gray-900 border border-gray-800 rounded-xl p-6 relative overflow-hidden group"
               >
-                {/* Línea de tiempo */}
+                {/* Timeline */}
                 <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-primary to-secondary" />
 
                 <div className="ml-4">

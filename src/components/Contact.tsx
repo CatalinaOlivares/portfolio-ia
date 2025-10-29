@@ -13,9 +13,9 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Aquí puedes implementar el envío del formulario
-    console.log("Formulario enviado:", formData);
-    alert("¡Mensaje enviado! (Este es un placeholder, configura tu backend)");
+    // Here you can implement form submission
+    console.log("Form submitted:", formData);
+    alert("Message sent! (This is a placeholder, configure your backend)");
   };
 
   const handleChange = (
@@ -30,7 +30,7 @@ export default function Contact() {
   return (
     <section id="contact" className="min-h-screen py-20 px-6">
       <div className="max-w-5xl mx-auto">
-        {/* Título */}
+        {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -39,15 +39,15 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-bold gradient-text mb-4">
-            Contáctame
+            Contact Me
           </h2>
           <p className="text-xl text-gray-400">
-            ¿Tienes un proyecto en mente? ¡Hablemos!
+            Have a project in mind? Let's talk!
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Información de contacto */}
+          {/* Contact information */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -57,11 +57,10 @@ export default function Contact() {
           >
             <div>
               <h3 className="text-2xl font-bold text-white mb-6">
-                Conectemos
+                Let's Connect
               </h3>
               <p className="text-gray-400 text-lg leading-relaxed mb-8">
-                Estoy siempre abierta a nuevas oportunidades, colaboraciones y proyectos
-                interesantes en el campo de la inteligencia artificial.
+                I'm always open to new opportunities, collaborations and interesting projects in the field of artificial intelligence.
               </p>
             </div>
 
@@ -109,7 +108,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500">LinkedIn</p>
-                  <p className="text-white font-medium">Ver perfil</p>
+                  <p className="text-white font-medium">View profile</p>
                 </div>
               </motion.a>
 
@@ -131,13 +130,13 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500">GitHub</p>
-                  <p className="text-white font-medium">Ver repositorios</p>
+                  <p className="text-white font-medium">View repositories</p>
                 </div>
               </motion.a>
             </div>
           </motion.div>
 
-          {/* Formulario de contacto */}
+          {/* Contact form */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -153,7 +152,7 @@ export default function Contact() {
                   htmlFor="name"
                   className="block text-sm font-medium text-gray-400 mb-2"
                 >
-                  Nombre
+                  Name
                 </label>
                 <input
                   type="text"
@@ -163,7 +162,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-primary transition-colors"
-                  placeholder="Tu nombre"
+                  placeholder="Your name"
                 />
               </div>
 
@@ -182,7 +181,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-primary transition-colors"
-                  placeholder="tu@email.com"
+                  placeholder="your@email.com"
                 />
               </div>
 
@@ -191,7 +190,7 @@ export default function Contact() {
                   htmlFor="message"
                   className="block text-sm font-medium text-gray-400 mb-2"
                 >
-                  Mensaje
+                  Message
                 </label>
                 <textarea
                   id="message"
@@ -201,7 +200,7 @@ export default function Contact() {
                   required
                   rows={5}
                   className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-primary transition-colors resize-none"
-                  placeholder="Cuéntame sobre tu proyecto..."
+                  placeholder="Tell me about your project..."
                 />
               </div>
 
@@ -211,7 +210,7 @@ export default function Contact() {
                 whileTap={{ scale: 0.98 }}
                 className="w-full px-6 py-4 bg-primary text-black font-semibold rounded-lg hover:bg-opacity-80 transition-all duration-300 glow-on-hover"
               >
-                Enviar Mensaje
+                Send Message
               </motion.button>
             </form>
           </motion.div>

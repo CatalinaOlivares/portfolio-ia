@@ -16,11 +16,11 @@ export default function Navbar() {
   }, []);
 
   const navItems = [
-    { name: "Inicio", href: "#home" },
-    { name: "Proyectos", href: "#projects" },
-    { name: "Sobre Mí", href: "#about" },
-    { name: "Habilidades", href: "#skills" },
-    { name: "Contacto", href: "#contact" },
+    { name: "Home", href: "#home" },
+    { name: "Projects", href: "#projects" },
+    { name: "About", href: "#about" },
+    { name: "Skills", href: "#skills" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
@@ -42,7 +42,7 @@ export default function Navbar() {
             className="text-2xl font-bold gradient-text"
             whileHover={{ scale: 1.05 }}
           >
-            IA Portfolio
+            PatternAI 
           </motion.a>
 
           {/* Nav Items - Desktop */}

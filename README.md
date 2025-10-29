@@ -1,198 +1,256 @@
-# 🤖 Portafolio de Inteligencia Artificial
+# 🤖 AI Portfolio
 
-Un portafolio profesional y espectacular con diseño "Estética Neural", construido con Next.js, TypeScript, Tailwind CSS y Framer Motion.
+A professional and spectacular portfolio with "Neural Aesthetics" design, built with Next.js, TypeScript, Tailwind CSS and Framer Motion.
 
-## ✨ Características
+## ✨ Features
 
-- 🎨 **Diseño Minimalista y Moderno**: Inspirado en Neuweb Studio
-- 🌙 **Tema Oscuro Profesional**: Optimizado para el campo de IA
-- ⚡ **Animaciones Fluidas**: Usando Framer Motion
-- 🔮 **Fondo Neural Interactivo**: Partículas y líneas animadas
-- 📱 **Totalmente Responsive**: Se adapta a cualquier dispositivo
-- 🚀 **Optimizado para SEO**: Built con Next.js 15
-- ⚙️ **Fácil de Personalizar**: Un solo archivo de configuración
+- 🎨 **Minimalist & Modern Design**: Inspired by Neuweb Studio
+- 🌙 **Professional Dark Theme**: Optimized for the AI field
+- ⚡ **Smooth Animations**: Using Framer Motion
+- 🔮 **Interactive Neural Background**: Animated particles and lines
+- 📱 **Fully Responsive**: Adapts to any device
+- 🚀 **SEO Optimized**: Built with Next.js 16
+- ⚙️ **Easy to Customize**: Single configuration file
 
-## 📁 Estructura del Proyecto
+## 📁 Project Structure
 
 ```
 portfolio-ia/
 ├── src/
 │   ├── app/
-│   │   ├── page.tsx          # Página principal
-│   │   ├── layout.tsx        # Layout global
-│   │   └── globals.css       # Estilos globales
+│   │   ├── page.tsx          # Main page
+│   │   ├── layout.tsx        # Global layout
+│   │   └── globals.css       # Global styles
 │   ├── components/
-│   │   ├── Hero.tsx          # Sección de inicio
-│   │   ├── Projects.tsx      # Galería de proyectos
-│   │   ├── About.tsx         # Sobre mí
-│   │   ├── Skills.tsx        # Habilidades técnicas
-│   │   ├── Contact.tsx       # Formulario de contacto
-│   │   ├── Navbar.tsx        # Navegación
-│   │   └── NeuralBackground.tsx  # Fondo animado
+│   │   ├── Hero.tsx          # Hero section
+│   │   ├── Projects.tsx      # Project gallery
+│   │   ├── About.tsx         # About me
+│   │   ├── Skills.tsx        # Technical skills
+│   │   ├── Contact.tsx       # Contact form
+│   │   ├── Navbar.tsx        # Navigation
+│   │   └── NeuralBackground.tsx  # Animated background
 │   └── lib/
-│       └── config.ts         # 🎯 TU CONFIGURACIÓN AQUÍ
+│       └── config.ts         # 🎯 YOUR CONFIGURATION HERE
 ├── public/
-│   └── projects/             # Coloca aquí las imágenes de tus proyectos
+│   └── projects/             # Place your project images here
 └── README.md
 ```
 
-## 🚀 Inicio Rápido
+## 🚀 Quick Start
 
-### 1. Instalar Dependencias
+### 1. Install Dependencies
 
 ```bash
 cd portfolio-ia
 npm install
 ```
 
-### 2. Personalizar tu Información
+### 2. Customize Your Information
 
-Edita el archivo `src/lib/config.ts` con tu información:
+Edit the `src/lib/config.ts` file with your information:
 
 ```typescript
 export const personalData = {
-  name: "Tu Nombre Completo",
-  title: "Ingeniera de IA",
-  email: "tu.email@example.com",
-  linkedin: "https://www.linkedin.com/in/tu-usuario/",
-  github: "https://github.com/tu-usuario",
+  name: "Your Full Name",
+  title: "AI Engineer",
+  email: "your.email@example.com",
+  linkedin: "https://www.linkedin.com/in/your-username/",
+  github: "https://github.com/your-username",
   // ... etc
 };
 ```
 
-### 3. Agregar Imágenes de Proyectos
+### 3. Add Project Images
 
-1. Coloca tus imágenes en la carpeta `public/projects/`
-2. Nombra tus archivos como: `project1.jpg`, `project2.jpg`, etc.
-3. Formatos aceptados: `.jpg`, `.png`, `.webp`, `.gif`
+1. Place your images in the `public/projects/` folder
+2. Name your files like: `project1.jpg`, `project2.jpg`, etc.
+3. Accepted formats: `.jpg`, `.png`, `.webp`, `.gif`
 
-### 4. Ejecutar el Proyecto
+### 4. Run the Project
 
 ```bash
 npm run dev
 ```
 
-Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 🎨 Personalización
+## 🎨 Customization
 
-### Cambiar Colores
+### Change Colors
 
-Edita `tailwind.config.ts`:
+Edit `tailwind.config.ts`:
 
 ```typescript
 colors: {
-  primary: "#00d9ff",    // Color principal (azul cian)
-  secondary: "#ff00ff",  // Color secundario (magenta)
+  primary: "#00d9ff",    // Cyan blue (default)
+  secondary: "#ff00ff",  // Magenta (default)
 }
 ```
 
-### Agregar Más Proyectos
+You can change to:
+- Green: `#00ff88`
+- Purple: `#9d4edd`
+- Orange: `#ff6b35`
 
-En `src/lib/config.ts`, agrega más objetos al array `projects`:
+### Customize Sections
 
-```typescript
-projects: [
-  {
-    id: 1,
-    title: "Mi Nuevo Proyecto",
-    description: "Descripción del proyecto...",
-    image: "/projects/nuevo-proyecto.jpg",
-    technologies: ["Python", "TensorFlow"],
-    github: "https://github.com/...",
-    demo: "https://...",
-  },
-  // ... más proyectos
-]
+All sections are in `src/components/`:
+- `Hero.tsx` - Main title and description
+- `About.tsx` - Your biography
+- `Skills.tsx` - Technical skills
+- `Projects.tsx` - Your projects
+- `Contact.tsx` - Contact information
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 16
+- **Language**: TypeScript 5
+- **Styling**: Tailwind CSS 3
+- **Animations**: Framer Motion 11
+- **Icons**: Lucide React
+- **Deployment**: Vercel (recommended)
+
+## 📦 Scripts
+
+```bash
+npm run dev      # Run development server
+npm run build    # Build for production
+npm start        # Run production server
+npm run lint     # Run linter
 ```
 
-### Modificar Habilidades
+## 🚀 Deployment
 
-En `src/lib/config.ts`, edita el objeto `skills`:
+### Deploy on Vercel (Recommended)
 
-```typescript
-skills: {
-  languages: ["Python", "JavaScript", "..."],
-  frameworks: ["TensorFlow", "PyTorch", "..."],
-  tools: ["Docker", "AWS", "..."],
-  specialties: ["Machine Learning", "NLP", "..."],
-}
-```
+1. Push your code to GitHub
+2. Go to [vercel.com](https://vercel.com)
+3. Import your repository
+4. Deploy! (automatic)
 
-## 📦 Construcción para Producción
+### Manual Build
 
 ```bash
 npm run build
 npm start
 ```
 
-## 🚀 Despliegue
+## 📝 Configuration File (`config.ts`)
 
-### Vercel (Recomendado)
+```typescript
+export const personalData = {
+  // Personal Information
+  name: "Your Name",
+  title: "Your Title",
+  tagline: "Your Tagline",
+  bio: "Your Bio",
 
-1. Push tu código a GitHub
-2. Visita [vercel.com](https://vercel.com)
-3. Importa tu repositorio
-4. Vercel detectará Next.js automáticamente
-5. ¡Despliega!
+  // Contact
+  email: "your.email@example.com",
+  linkedin: "https://linkedin.com/in/your-username",
+  github: "https://github.com/your-username",
 
-### Netlify
+  // Projects
+  projects: [
+    {
+      id: 1,
+      title: "Project Name",
+      description: "Project Description",
+      image: "/projects/project1.jpg",
+      technologies: ["Tech1", "Tech2", "Tech3"],
+      github: "https://github.com/your-username/project",
+      demo: "https://your-demo.com",
+    },
+    // Add more projects...
+  ],
 
-```bash
-npm run build
+  // Skills
+  skills: {
+    languages: ["Python", "JavaScript", "etc"],
+    frameworks: ["TensorFlow", "React", "etc"],
+    tools: ["Docker", "AWS", "etc"],
+    specialties: ["ML", "Deep Learning", "etc"],
+  },
+
+  // Experience
+  experience: [
+    {
+      id: 1,
+      role: "Your Role",
+      company: "Company Name",
+      period: "2023 - Present",
+      description: "Description of your responsibilities and achievements.",
+    },
+    // Add more experience...
+  ],
+
+  // Education
+  education: {
+    degree: "Your Degree",
+    institution: "Your University",
+    period: "2020 - 2024",
+    specialization: "Your Specialization",
+  },
+};
 ```
 
-Luego sube la carpeta `.next` a Netlify.
+## 📸 Screenshots
 
-## 🛠️ Tecnologías Utilizadas
+### Hero Section
+The main landing section with animated neural network background.
 
-- **Next.js 16** - Framework de React
-- **TypeScript** - Tipado estático
-- **Tailwind CSS 4** - Estilos utility-first
-- **Framer Motion 12** - Animaciones fluidas
-- **React 19** - Biblioteca de UI
+### Projects Section
+Gallery showcasing your best AI/ML projects.
 
-## 📝 Lista de Tareas Post-Instalación
+### Skills Section
+Display your technical skills organized by categories.
 
-- [ ] Editar `src/lib/config.ts` con tu información personal
-- [ ] Agregar tus imágenes de proyectos en `public/projects/`
-- [ ] Actualizar la información de tus proyectos
-- [ ] Añadir tus habilidades técnicas
-- [ ] Configurar el formulario de contacto (backend)
-- [ ] Agregar tu foto de perfil (opcional)
-- [ ] Configurar Google Analytics (opcional)
-- [ ] Agregar meta tags personalizados en `layout.tsx`
+### Contact Section
+Easy way for recruiters and collaborators to reach you.
 
-## 💡 Consejos
+## 🎯 Best Practices
 
-1. **Imágenes**: Usa imágenes optimizadas (WebP) para mejor rendimiento
-2. **SEO**: Actualiza los meta tags en `src/app/layout.tsx`
-3. **Formulario**: Conecta el formulario de contacto con EmailJS, Formspree o tu backend
-4. **Analytics**: Agrega Google Analytics o Vercel Analytics
+1. **Images**: Optimize your images before uploading (use WebP format)
+2. **Projects**: Add 3-6 of your best projects
+3. **Bio**: Keep it concise (2-3 sentences)
+4. **Skills**: Only list skills you're confident in
+5. **GitHub**: Make sure all GitHub links are public
 
-## 🐛 Solución de Problemas
+## 🐛 Troubleshooting
 
-### El sitio no carga
-```bash
-rm -rf node_modules package-lock.json
-npm install
-```
+### Images not showing
+- Check that images are in `public/projects/`
+- Verify the image path in `config.ts` starts with `/`
+- Ensure images have the correct extension
 
-### Errores de TypeScript
-Revisa que todos los tipos estén correctamente definidos en `config.ts`
+### Animations not working
+- Clear your browser cache
+- Run `npm install` again
+- Make sure Framer Motion is properly installed
 
-### Las animaciones no funcionan
-Asegúrate de que Framer Motion esté instalado:
-```bash
-npm install framer-motion
-```
+### Build errors
+- Check that all required fields in `config.ts` are filled
+- Ensure TypeScript types are correct
+- Run `npm run lint` to check for errors
 
-## 📄 Licencia
+## 📄 License
 
-Este proyecto es de código abierto. Siéntete libre de usarlo para tu portafolio personal.
+MIT License - Feel free to use this template for your own portfolio!
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## ⭐ Show Your Support
+
+Give a ⭐️ if this project helped you!
+
+## 👤 Author
+
+**Catalina Olivares Maturana**
+- LinkedIn: [@catalina-olivares-maturana](https://www.linkedin.com/in/catalina-olivares-maturana/)
+- GitHub: [@CatalinaOlivares](https://github.com/CatalinaOlivares)
 
 ---
 
-**¿Necesitas ayuda?** Abre un issue en el repositorio o contacta al creador.
-
-Hecho con ❤️ usando la Estética Neural
+🤖 **Built with Claude Code** - AI-powered development assistant

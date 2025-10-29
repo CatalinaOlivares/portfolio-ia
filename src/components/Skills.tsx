@@ -5,16 +5,16 @@ import { personalData } from "@/lib/config";
 
 export default function Skills() {
   const skillCategories = [
-    { name: "Lenguajes", skills: personalData.skills.languages, icon: "💻" },
-    { name: "Frameworks IA", skills: personalData.skills.frameworks, icon: "🤖" },
-    { name: "Herramientas", skills: personalData.skills.tools, icon: "🛠️" },
-    { name: "Especialidades", skills: personalData.skills.specialties, icon: "⭐" },
+    { name: "Languages", skills: personalData.skills.languages, icon: "💻" },
+    { name: "AI Frameworks", skills: personalData.skills.frameworks, icon: "🤖" },
+    { name: "Tools", skills: personalData.skills.tools, icon: "🛠️" },
+    { name: "Specialties", skills: personalData.skills.specialties, icon: "⭐" },
   ];
 
   return (
     <section id="skills" className="min-h-screen py-20 px-6">
       <div className="max-w-7xl mx-auto">
-        {/* Título */}
+        {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -23,14 +23,14 @@ export default function Skills() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-bold gradient-text mb-4">
-            Habilidades Técnicas
+            Technical Skills
           </h2>
           <p className="text-xl text-gray-400">
-            Herramientas y tecnologías que domino
+            Tools and technologies I master
           </p>
         </motion.div>
 
-        {/* Grid de categorías */}
+        {/* Categories grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {skillCategories.map((category, categoryIndex) => (
             <motion.div
@@ -70,7 +70,7 @@ export default function Skills() {
           ))}
         </div>
 
-        {/* Estadísticas visuales */}
+        {/* Visual statistics */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -79,10 +79,10 @@ export default function Skills() {
           className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
         >
           {[
-            { label: "Proyectos", value: `${personalData.projects.length}+` },
-            { label: "Tecnologías", value: `${personalData.skills.languages.length + personalData.skills.frameworks.length}+` },
-            { label: "Especialidades", value: `${personalData.skills.specialties.length}` },
-            { label: "Años Experiencia", value: "X+" },
+            { label: "Projects", value: `${personalData.projects.length}+` },
+            { label: "Technologies", value: `${personalData.skills.languages.length + personalData.skills.frameworks.length}+` },
+            { label: "Specialties", value: `${personalData.skills.specialties.length}` },
+            { label: "Years Experience", value: "5+" },
           ].map((stat, index) => (
             <motion.div
               key={stat.label}

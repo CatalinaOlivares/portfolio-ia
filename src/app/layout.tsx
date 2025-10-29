@@ -6,8 +6,8 @@ import LoadingScreen from "@/components/LoadingScreen";
 import FloatingElements from "@/components/FloatingElements";
 
 export const metadata: Metadata = {
-  title: "Portafolio de IA | Ingeniera en Inteligencia Artificial",
-  description: "Portafolio profesional de ingeniería en inteligencia artificial, machine learning y deep learning",
+  title: "PatternAI | Catalina Olivares - AI Manager & Civil Engineer",
+  description: "Professional portfolio showcasing AI/ML projects, reinforcement learning solutions, and fullstack development. Specialized in NP-hard optimization, computer vision, and modern technologies.",
 };
 
 export default function RootLayout({
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body className="neural-bg" suppressHydrationWarning>
         <LoadingScreen />
         <ScrollProgress />
